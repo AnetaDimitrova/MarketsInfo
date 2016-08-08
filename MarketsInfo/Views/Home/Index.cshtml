@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+@model List<MarketsInfo.Models.News>
+
+@foreach (var news in Model)
+{
+    <div class="row">
+        <div class="post col-md-6">
+            <h2>@news.Title</h2>
+            <div class="about">
+                Posted on <i>@news.date</i>
+                @if (news.Author != null)
+                {
+                    @:by <i>
+                        @news.Author.FullName
+                    @:( @news.Author.UserName ) </i>
+                }
+            </div>
+            <div class="body">
+                @Html.Raw(news.Body)
+            </div>
+        </div>
+    </div>
+}
