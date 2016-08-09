@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 using MarketsInfo.Models;
+using System.Net;
+using System.Text;
+using System.IO;
 
 
 namespace MarketsInfo.Controllers
@@ -24,9 +27,18 @@ namespace MarketsInfo.Controllers
 
         public ActionResult Markets()
         {
-            
 
-            return View();
+
+            string csvData;
+            string symbols = "^DJI, GOOG, FB, IBM";
+            using (WebClient web = new WebClient())
+            {
+                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes/csv?s=" + symbols + "&f=sa2l1");
+                List<StockInfo> stocks = YahooFinance.Parse(csvData);
+                return View(stocks);
+
+
+            }
         }
     }
 }
