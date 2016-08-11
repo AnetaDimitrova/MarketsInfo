@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MarketsInfo.Models
 {
     public class StockInfo
     {
         public string Symbol { get; set; }
-        public decimal AverangeVolume { get; set; }
-        public decimal LastTradePrice { get; set; }
+        public string Name { get; set; }
+        public decimal Bid { get; set; }
+        public decimal Ask { get; set; }
+        public decimal Open { get; set; }
+        public decimal PreviousClose { get; set; }
+        public decimal Last { get; set; }
+        public DateTime StockDate { get; set; }
     }
 
     public static class YahooFinance
@@ -25,9 +32,14 @@ namespace MarketsInfo.Models
                     if (string.IsNullOrEmpty(row)) continue;
                     string[] cols = row.Split(',');
                     StockInfo s = new StockInfo();
-                    s.Symbol = cols[0].Trim();
-                    s.AverangeVolume = Convert.ToDecimal((cols[1] == "N/A") ? "0" : cols[1]);
-                    s.LastTradePrice = Convert.ToDecimal((cols[2] == "N/A") ? "0" : cols[2]);
+                    s.Symbol = cols[0];
+                    s.Name = cols[1];
+                    s.Bid = Convert.ToDecimal(cols[2] == "N/A" ? "0" : cols[2]);
+                    s.Ask = Convert.ToDecimal(cols[3] == "N/A" ? "0" : cols[3]);
+                    s.Open = Convert.ToDecimal(cols[4] == "N/A" ? "0" : cols[4]);
+                    s.PreviousClose = Convert.ToDecimal(cols[5] == "N/A" ? "0" : cols[5]);
+                    s.Last = Convert.ToDecimal(cols[6] == "N/A" ? "0" : cols[6]);
+                    s.StockDate = DateTime.Now;
                     stocks.Add(s);
                 }
                 return stocks;

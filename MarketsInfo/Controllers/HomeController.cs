@@ -30,15 +30,21 @@ namespace MarketsInfo.Controllers
 
 
             string csvData;
-            string symbols = "^DJI, GOOG, FB, IBM";
+            string symbols = "EURUSD=X, AAPL, GOOG, MSFT, ^DJI, ^IXIC, CL=F";
             using (WebClient web = new WebClient())
             {
-                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes/csv?s=" + symbols + "&f=sa2l1");
+                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s="+symbols+"&f=snbaopl1");
                 List<StockInfo> stocks = YahooFinance.Parse(csvData);
+                
                 return View(stocks);
 
 
             }
+        }
+
+        public ActionResult test()
+        {
+            return View();
         }
     }
 }

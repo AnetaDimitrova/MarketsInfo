@@ -21,5 +21,6 @@ namespace MarketsInfo.Models
         }
 
         public System.Data.Entity.DbSet<MarketsInfo.Models.News> News { get; set; }
+       
     }
 }
