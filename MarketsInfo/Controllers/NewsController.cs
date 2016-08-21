@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Mime;
 using System.Web;
 using System.Web.Mvc;
 using MarketsInfo.Models;
@@ -17,8 +18,14 @@ namespace MarketsInfo.Controllers
 
         // GET: News
         public ActionResult Index()
+
         {
-            return View(db.News.Include(p => p.Author).ToList());
+            
+
+           
+            var news = db.News.Include(p => p.Author)
+                .Include(n => n.Comments).ToList();
+            return View(news);
         }
 
         // GET: News/Details/5

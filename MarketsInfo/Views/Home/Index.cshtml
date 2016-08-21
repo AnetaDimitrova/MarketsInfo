@@ -1,7 +1,11 @@
-﻿@{
+﻿
+
+
+@{
     ViewBag.Title = "Home";
 }
 @model List<MarketsInfo.Models.News>
+
 
 @foreach (var news in Model)
 {
@@ -19,6 +23,25 @@
             </div>
             <div class="body">
                 @Html.Raw(news.Body)
+                <th>
+                    @Html.ActionLink("Add comment", "Create", "Comments")
+                </th>
+                @news.Comments.Count
+                @foreach (var com in news.Comments)
+                {
+                    <tr>
+                    <td>
+                        @Html.DisplayFor(model => com.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => com.Text)
+                    </td>
+                        <td>
+                            @Html.DisplayFor(model => com.AuthorId)
+                        </td>
+                    </tr>
+                }
+
             </div>
         </div>
     </div>

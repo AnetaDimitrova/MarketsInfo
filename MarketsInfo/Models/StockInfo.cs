@@ -4,11 +4,14 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 
 namespace MarketsInfo.Models
 {
+ 
     public class StockInfo
     {
+        [Key]
         public string Symbol { get; set; }
         public string Name { get; set; }
         public decimal Bid { get; set; }
@@ -23,6 +26,7 @@ namespace MarketsInfo.Models
     {
         public static List<StockInfo> Parse(string csvData)
         {
+               
             try
             {
                 List < StockInfo > stocks = new List<StockInfo>();
@@ -41,6 +45,7 @@ namespace MarketsInfo.Models
                     s.Last = Convert.ToDecimal(cols[6] == "N/A" ? "0" : cols[6]);
                     s.StockDate = DateTime.Now;
                     stocks.Add(s);
+                    
                 }
                 return stocks;
             }

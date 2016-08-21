@@ -32,9 +32,9 @@ namespace MarketsInfo.Migrations
 
                 CreatePost(context,
                     title: "Germany's new electric car discount scheme draws nearly 2,000 applicants",
-                    body: @"BERLIN (Reuters) - Nearly 2,000 people in Germany have applied for the government's electric car discount scheme, introduced on July 1, and a third of them are buyers of BMW (DE:BMWG) models, a government agency said on Thursday.
-The scheme, similar to those established in other European countries to spur electric car sales, grants buyers of electric cars a 4,000 euro($4,452.00) discount and gives buyers of plug-in hybrid vehicles a discount of 3,000 euros.
-Since its introduction, 1,791 buyers of electric or plug-in hybrid vehicles have applied for the discounts and 581 of them were buyers of BMW models, notably its i3 electric car, the BAFA economic affairs and export control agency said. BMW has pioneered the production of such cars in Germany and offers more models than other carmakers.
+                    body: @"<p>BERLIN (Reuters) - Nearly 2,000 people in Germany have applied for the government's electric car discount scheme, introduced on July 1, and a third of them are buyers of BMW (DE:BMWG) models, a government agency said on Thursday.
+The scheme, similar to those established in other European countries to spur electric car sales, grants buyers of electric cars a 4,000 euro($4,452.00) discount and gives buyers of plug-in hybrid vehicles a discount of 3,000 euros.</p>
+<p>Since its introduction, 1,791 buyers of electric or plug-in hybrid vehicles have applied for the discounts and 581 of them were buyers of BMW models, notably its i3 electric car, the BAFA economic affairs and export control agency said. BMW has pioneered the production of such cars in Germany and offers more models than other carmakers.</p>
 There were 444 applications for the discounts from buyers of Renault (PA:RENA) models and 154 applications from buyers of Volkswagen (DE:VOWG_p) models, BAFA said.
 The total 1.2 billion euro ($1.3 billion) cost of the incentives is being shared equally between the German government and carmakers, with a goal of selling around 400,000 electric cars in Europe's biggest car market.
 Out of the 45 million cars on German roads, only about 50,000 are purely battery-powered vehicles or plug-in hybrids.

@@ -1,0 +1,25 @@
+Sub metrics_get()
+Range("C6:ZZ999").Delete
+
+
+For tickers_get = 6 To Cells(6, 1).End(xlDown).Row
+tickerstring = tickerstring & "+" & Cells(tickers_get, 1)
+
+Next tickers_get
+
+tickerstring = Right(tickerstring, Len(tickerstring) - 1)
+tickerstring = "http://download.finance.yahoo.com/d/quotes.csv?s=" & tickerstring & "&f=" & Cells(1, 2)
+
+queryquote:
+    With ActiveSheet.QueryTables.Add(Connection:="URL;" & tickerstring, Destination:=Range("C6"))
+        .BackgroundQuery = True
+        .Refresh BackgroundQuery:=False
+        
+    End With
+    
+ Range("C6").CurrentRegion.TextToColumns Destination:=Range("C6"), DataType:=xlDelimited, comma:=True
+ 
+ 
+
+End Sub
+

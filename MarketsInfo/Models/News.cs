@@ -9,6 +9,13 @@ namespace MarketsInfo.Models
 {
     public class News
     {
+
+        public News()
+        {
+            this.Comments = new HashSet<Comment>();
+           
+            
+        }
         [Key]
         public int Id { get; set; }
 
@@ -28,5 +35,10 @@ namespace MarketsInfo.Models
 
         [ForeignKey("Author_Id")]
         public ApplicationUser Author { get; set; }
+        public ICollection<Comment> Comments { get; set; }
+
+
+
+
     }
 }
