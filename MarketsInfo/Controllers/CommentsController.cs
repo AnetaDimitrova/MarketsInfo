@@ -39,8 +39,12 @@ namespace MarketsInfo.Controllers
 
         // GET: Comments/Create
         public ActionResult Create()
+
         {
+            
+           
             ViewBag.NewsId = new SelectList(db.News, "Id", "Title");
+           
             return View();
         }
 

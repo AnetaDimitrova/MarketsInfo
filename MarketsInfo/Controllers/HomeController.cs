@@ -34,6 +34,7 @@ namespace MarketsInfo.Controllers
             {
                 csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s="+symbols+"&f=snbaopl1");
                 List<StockInfo> stocks = YahooFinance.Parse(csvData);
+                
                 db.SaveChanges();
                 return View(stocks);
 
@@ -41,9 +42,29 @@ namespace MarketsInfo.Controllers
             }
         }
 
+
+
+     
+
         public ActionResult test()
         {
             return View();
         }
+
+        // GET: News/Details/5
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var news = db.News.Include(n => n.Author).Include(n => n.Comments).FirstOrDefault(n => n.Id == id);
+            if (news == null)
+            {
+                return HttpNotFound();
+            }
+            return View(news);
+        }
+
     }
 }

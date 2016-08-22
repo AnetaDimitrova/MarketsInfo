@@ -32,32 +32,32 @@ namespace MarketsInfo.Migrations
 
                 CreatePost(context,
                     title: "Germany's new electric car discount scheme draws nearly 2,000 applicants",
-                    body: @"<p>BERLIN (Reuters) - Nearly 2,000 people in Germany have applied for the government's electric car discount scheme, introduced on July 1, and a third of them are buyers of BMW (DE:BMWG) models, a government agency said on Thursday.
-The scheme, similar to those established in other European countries to spur electric car sales, grants buyers of electric cars a 4,000 euro($4,452.00) discount and gives buyers of plug-in hybrid vehicles a discount of 3,000 euros.</p>
+                    body: @"<p>BERLIN (Reuters) - Nearly 2,000 people in Germany have applied for the government's electric car discount scheme, introduced on July 1, and a third of them are buyers of BMW (DE:BMWG) models, a government agency said on Thursday.</p>
+<p>The scheme, similar to those established in other European countries to spur electric car sales, grants buyers of electric cars a 4,000 euro($4,452.00) discount and gives buyers of plug-in hybrid vehicles a discount of 3,000 euros.</p>
 <p>Since its introduction, 1,791 buyers of electric or plug-in hybrid vehicles have applied for the discounts and 581 of them were buyers of BMW models, notably its i3 electric car, the BAFA economic affairs and export control agency said. BMW has pioneered the production of such cars in Germany and offers more models than other carmakers.</p>
-There were 444 applications for the discounts from buyers of Renault (PA:RENA) models and 154 applications from buyers of Volkswagen (DE:VOWG_p) models, BAFA said.
-The total 1.2 billion euro ($1.3 billion) cost of the incentives is being shared equally between the German government and carmakers, with a goal of selling around 400,000 electric cars in Europe's biggest car market.
-Out of the 45 million cars on German roads, only about 50,000 are purely battery-powered vehicles or plug-in hybrids.
-The incentive scheme expires at the end of June 2019, BAFA said.
-BAFA said 1,194 requests for the discounts on electric cars and 597 requests for plug-in hybrid discounts have been submitted, adding a third of all requests were filed on behalf of companies.",
+<p>There were 444 applications for the discounts from buyers of Renault (PA:RENA) models and 154 applications from buyers of Volkswagen (DE:VOWG_p) models, BAFA said.</p>
+<p>The total 1.2 billion euro ($1.3 billion) cost of the incentives is being shared equally between the German government and carmakers, with a goal of selling around 400,000 electric cars in Europe's biggest car market.</p>
+<p>Out of the 45 million cars on German roads, only about 50,000 are purely battery-powered vehicles or plug-in hybrids.
+The incentive scheme expires at the end of June 2019, BAFA said.</p>
+<p>BAFA said 1,194 requests for the discounts on electric cars and 597 requests for plug-in hybrid discounts have been submitted, adding a third of all requests were filed on behalf of companies.</p>",
                     date: new DateTime(2016, 03, 27, 17, 53, 48),
                     authorUsername: "merry@gmail.com"
                 );
 
                 CreatePost(context,
                     title: "New U.S. mortgage rules aim to stop wrongful foreclosures",
-                    body: @"WASHINGTON (Reuters) - The U.S. agency charged with protecting consumers' finances approved rules on Thursday that will help prevent wrongful home foreclosures, as the regulator continues to press on with reforming the country's massive lending market.
-The rules by the Consumer Financial Protection Bureau (CFPB), created in the aftermath of the U.S. housing bust that began in 2006, build on current regulations requiring a mortgage servicer to grant certain foreclosure protections to a struggling borrower once over the life of the loan.
-Now, servicers, the conduits for mortgage payments, must provide those protections more than once, offering them to borrowers who make current payments after they have worked out an agreement to avoid foreclosure.
-""This change will be particularly helpful for borrowers who obtain a permanent loan modification and later suffer an unrelated hardship – such as the loss of a job or the death of a family member – that could otherwise cause them to face foreclosure,"" the CFPB said in an outline of the new rules.
-The rules also expand consumer protections to surviving family members and require servicers to give borrowers in bankruptcy information about possible interventions.
-They bolster requirements related to loss mitigation, a foreclosure alternative that allows people to stay in their homes and pay some money to lenders, as well.
-Servicers will have to promptly notify borrowers when loss mitigation applications are complete, and will not be able to ""dual track,"" where they take legal steps toward foreclosure at the same time they evaluate the applications.
-""The Consumer Bureau is committed to ensuring that homeowners and struggling borrowers are treated fairly by mortgage servicers and that no one is wrongly foreclosed upon,” CFPB Director Richard Cordray said in a statement.
-In a June report, the CFPB showed some servicers are giving homeowners wrong or outdated information, or no information at all.
-When mortgage defaults spiked during the 2007-09 financial crisis, servicers came under intense scrutiny for missing paperwork, incomplete documentation, and ""robosigning,"" where employees signed off on foreclosures without review.
-A crisis-era Treasury program that allows struggling borrowers to reduce their monthly payments and prevent foreclosure will expire in January.
-On Tuesday, the CFPB said it was looking into crafting new debt relief programs and released the principles guiding its work, which emphasized giving consumers easy access to information about loss mitigation and the decisions servicers make on their loans and creating repayment plans and loan modifications that are affordable.",
+                    body: @"<p>WASHINGTON (Reuters) - The U.S. agency charged with protecting consumers' finances approved rules on Thursday that will help prevent wrongful home foreclosures, as the regulator continues to press on with reforming the country's massive lending market.</p>
+<p>The rules by the Consumer Financial Protection Bureau (CFPB), created in the aftermath of the U.S. housing bust that began in 2006, build on current regulations requiring a mortgage servicer to grant certain foreclosure protections to a struggling borrower once over the life of the loan.</p>
+<p>Now, servicers, the conduits for mortgage payments, must provide those protections more than once, offering them to borrowers who make current payments after they have worked out an agreement to avoid foreclosure.</p>
+<p>""This change will be particularly helpful for borrowers who obtain a permanent loan modification and later suffer an unrelated hardship – such as the loss of a job or the death of a family member – that could otherwise cause them to face foreclosure,"" the CFPB said in an outline of the new rules.</p>
+<p>The rules also expand consumer protections to surviving family members and require servicers to give borrowers in bankruptcy information about possible interventions.</p>
+<p>They bolster requirements related to loss mitigation, a foreclosure alternative that allows people to stay in their homes and pay some money to lenders, as well.</p>
+<p.Servicers will have to promptly notify borrowers when loss mitigation applications are complete, and will not be able to ""dual track,"" where they take legal steps toward foreclosure at the same time they evaluate the applications.</p>.
+<p>""The Consumer Bureau is committed to ensuring that homeowners and struggling borrowers are treated fairly by mortgage servicers and that no one is wrongly foreclosed upon,” CFPB Director Richard Cordray said in a statement.</p>
+<p>In a June report, the CFPB showed some servicers are giving homeowners wrong or outdated information, or no information at all.
+When mortgage defaults spiked during the 2007-09 financial crisis, servicers came under intense scrutiny for missing paperwork, incomplete documentation, and ""robosigning,"" where employees signed off on foreclosures without review.</p>
+<p>A crisis-era Treasury program that allows struggling borrowers to reduce their monthly payments and prevent foreclosure will expire in January.</p>
+<p>On Tuesday, the CFPB said it was looking into crafting new debt relief programs and released the principles guiding its work, which emphasized giving consumers easy access to information about loss mitigation and the decisions servicers make on their loans and creating repayment plans and loan modifications that are affordable.</p>",
                     date: new DateTime(2016, 05, 11, 08, 22, 03),
                     authorUsername: "merry@gmail.com"
                 );

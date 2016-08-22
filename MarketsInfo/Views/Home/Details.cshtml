@@ -1,0 +1,72 @@
+﻿
+@using MarketsInfo.Models
+@model MarketsInfo.Models.News
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div>
+    <h4>News</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <div>
+           <h2> @Html.DisplayFor(model => model.Title)</h2>
+       </div>
+
+
+        <div>
+            Posted on
+            <i>  @Html.DisplayFor(model => model.date)</i>
+        </div>
+        <div>
+            
+            @if (Model.Author != null)
+            {
+                @:by <i>
+                @Model.Author.FullName
+                @:( @Model.Author.UserName )</i>
+            }
+            
+
+
+
+        </div>
+
+
+        <text>
+            @Html.Raw( Model.Body)
+
+        <</text>
+
+        <div>
+            @Html.ActionLink("Add comment", "Create", "Comments")
+        </div>
+
+        <div>
+            @foreach (var news in Model.Comments)
+            {
+                <div>
+                    <p>
+                        @Html.DisplayFor(model => news.Date)
+                    </p>
+                     <p>
+                        @Html.DisplayFor(model => news.Text)
+                    </p>
+                    <p>
+                        @Html.DisplayFor(model => news.AuthorId)
+                    </p>
+                </div>
+            }
+        </div>
+
+    </dl>
+</div>
+<p>
+ 
+    @Html.ActionLink("Back to List", "Index")
+</p>

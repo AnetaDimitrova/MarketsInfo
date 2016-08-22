@@ -1749,7 +1749,8 @@ fieldset[disabled] .form-control {
 }
 
 textarea.form-control {
-  height: auto;
+  height: 700px;
+    width: 240px;
 }
 
 .form-group {
