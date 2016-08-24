@@ -22,20 +22,20 @@ namespace MarketsInfo.Controllers
             return View(news.ToList());
         }
 
-       
+
+
 
         public ActionResult Markets()
         {
 
-            
+
             string csvData;
-            string symbols = "EURUSD=X, AAPL, GOOG, MSFT, ^DJI, ^IXIC, CL=F, CRIH.F, CTY";
+            string symbols = "EURUSD=X, AAPL, GOOG, MSFT, ^DJI, ^IXIC, CL=F";
             using (WebClient web = new WebClient())
             {
-                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s="+symbols+"&f=snbaopl1");
+                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");
                 List<StockInfo> stocks = YahooFinance.Parse(csvData);
-                
-                db.SaveChanges();
+
                 return View(stocks);
 
 
@@ -43,15 +43,15 @@ namespace MarketsInfo.Controllers
         }
 
 
+       
 
-     
 
         public ActionResult test()
         {
             return View();
         }
 
-        // GET: News/Details/5
+       
         public ActionResult Details(int? id)
         {
             if (id == null)

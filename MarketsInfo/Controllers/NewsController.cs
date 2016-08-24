@@ -23,8 +23,8 @@ namespace MarketsInfo.Controllers
             
 
            
-            var news = db.News.Include(p => p.Author)
-                .Include(n => n.Comments).ToList();
+            var news = db.News.Include(n => n.Author)
+                .Include(n => n.Comments).OrderByDescending(n => n.date).ToList();
             return View(news);
         }
 

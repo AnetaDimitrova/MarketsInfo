@@ -26,6 +26,7 @@ namespace MarketsInfo.Migrations
                 CreateUser(context, "yasha@gmail.com", "123", "Yashaswini Swamynathan");
                 CreateUser(context, "merry@gmail.com", "123", "Maria Petrova");
                 CreateUser(context, "david@gmail.com", "123", "David Ingram");
+                CreateUser(context, "ellen@gmail.com", "123", "Ellen R. Wald");
 
                 CreateRole(context, "Administrators");
                 AddUserToRole(context, "admin@gmail.com", "Administrators");
@@ -64,32 +65,32 @@ When mortgage defaults spiked during the 2007-09 financial crisis, servicers cam
 
                 CreatePost(context,
                     title: "Business groups sue over new U.S. limit on tax-driven foreign buyouts",
-                    body: @"NEW YORK/WASHINGTON (Reuters) - Two business groups sued the Obama administration on Thursday over a crackdown on U.S. companies that try to reduce their U.S. taxes by rebasing abroad in a process known as inversion.
-The U.S. Chamber of Commerce and the Texas Association of Business filed a lawsuit in Texas federal court that said a regulation from the U.S. Treasury Department in April exceeded what the law allows the department to do.
+                    body: @"<p>NEW YORK/WASHINGTON (Reuters) - Two business groups sued the Obama administration on Thursday over a crackdown on U.S. companies that try to reduce their U.S. taxes by rebasing abroad in a process known as inversion.</p>
+<p>The U.S. Chamber of Commerce and the Texas Association of Business filed a lawsuit in Texas federal court that said a regulation from the <p>U.S. Treasury Department in April exceeded what the law allows the department to do.</p>
 The lawsuit was the first to challenge a rule on inversion. The deals are legal, but have drawn criticism from some politicians who say U.S. companies that do them are avoiding their tax obligations. A wave of inversions largely ended after Treasury moved against the deals.
-The rule targeted by the lawsuit is aimed at transactions involving non-U.S. companies, such as Ireland-based drugmaker Allergan Plc (N:AGN) that have grown through a series of acquisitions.
-It helped scuttle what had been a planned $160 billion combination of Allergan and U.S. drugmaker Pfizer Inc (N:PFE) in what would have been the largest inversion ever.
-""Treasury and the IRS ignored the clear limits of a statute, and simply rewrote the law unilaterally. This is not the way government is supposed to work in America,"" Tom Donohue, head of the chamber, a business lobbying group, said in a statement.
-A Treasury spokeswoman declined to comment.
-UPHILL BATTLE
-Lawyers with expertise in tax law have said such a lawsuit would face an uphill battle against Treasury, which has a strong record in court. The 1867 Anti-Injunction Act says that, in general, no legal challenge can be brought against a tax until it is assessed. So the administration of President Barack Obama could argue that the law bars a lawsuit for now.
-""I would be quite surprised if this case survived the obvious defense by the Justice Department that this is an attempt to short-circuit the regular course of tax collections,"" said Edward Kleinbard, a law professor at the University of Southern California.
-The chamber and the Texas Association of Business argue, though, that the Treasury and the tax-collecting Internal Revenue Service must still follow a different law, the Administrative Procedure Act (APA). That law spells out the process agencies must follow before they impose regulations.
-According to the lawsuit, the Treasury rule violated the APA because Treasury lacked authority to act, its rule was arbitrary and capricious, and it did not permit public notice and comment.
-Allergan and Pfizer are not parties to the lawsuit, but the lawsuits cites their failed merger as an example of the harm done by the rule.
-Representatives of the companies declined to comment on the litigation.
-Pfizer is a member of the chamber and the Texas Association of Business. Allergan is a member of the chamber and the Greater Waco Chamber of Commerce, which in turn is a member of the Texas group, the lawsuit said.
-The two drug companies ""would actively explore merger opportunities"" if the rule were set aside, the lawsuit said.
-DOZENS OF DEALS
-Dozens of U.S. companies have done inversions since 1983, when the first such deal was completed. Treasury has periodically moved to curb the flow of deals because inversions erode the U.S. corporate income tax base.
-Treasury unveiled a package of rules in April meant to further discourage the deals, which typically involve a U.S. multinational buying a smaller company in a foreign country with lower corporate taxes and then rebasing there, if only on paper.
-Inverting U.S. companies usually leave their core U.S. operations at home, transferring only their legal tax domicile to the home country of the acquired company. Recent popular destinations for the deals are Ireland, Britain and Canada.
-Fast food chain Burger King inverted to Canada last year; medical technology group Medtronic (N:MDT) to Ireland in 2014; drug maker Mylan Inc (O:MYL) to The Netherlands that same year.
-The lawsuit challenges a specific rule that imposed a three-year limit on foreign companies such as Allergan bulking up on U.S. assets to avoid ownership thresholds for a later inversion.
-In April, Treasury defended its regulation in a statement that said it was ""not consistent with the purposes"" of federal law to permit a foreign company to bulk up so quickly and then enter into another inversion.
-Texas federal courts have been a friendly venue for groups suing the Obama administration. A judge there blocked the president's proposed overhaul of immigration.
-More litigation is expected in the months ahead as Treasury moves to finalize another anti-inversions rule targeting ""earnings stripping,"" a tax-avoiding practice in which a foreign parent lends money to a U.S. unit, which sends U.S. profits back as partially U.S. tax-deductible interest.
-Republicans, and at times Obama, have pushed for a comprehensive tax code overhaul that would fully address inversions, but Washington for decades has lacked the political will to tackle such a complex project.",
+The rule targeted by the lawsuit is aimed at transactions involving non-U.S. companies, such as Ireland-based drugmaker Allergan Plc (N:AGN) that have grown through a series of acquisitions.</p>
+<p>It helped scuttle what had been a planned $160 billion combination of Allergan and U.S. drugmaker Pfizer Inc (N:PFE) in what would have been the largest inversion ever.</p>
+<p>""Treasury and the IRS ignored the clear limits of a statute, and simply rewrote the law unilaterally. This is not the way government is supposed to work in America,"" Tom Donohue, head of the chamber, a business lobbying group, said in a statement.</p>.
+<p>A Treasury spokeswoman declined to comment.</p>
+<p>UPHILL BATTLE</p>
+<p>Lawyers with expertise in tax law have said such a lawsuit would face an uphill battle against Treasury, which has a strong record in court. The 1867 Anti-Injunction Act says that, in general, no legal challenge can be brought against a tax until it is assessed. So the administration of President Barack Obama could argue that the law bars a lawsuit for now.</p>
+<p>""I would be quite surprised if this case survived the obvious defense by the Justice Department that this is an attempt to short-circuit the regular course of tax collections,"" said Edward Kleinbard, a law professor at the University of Southern California.</p>
+<p>The chamber and the Texas Association of Business argue, though, that the Treasury and the tax-collecting Internal Revenue Service must still follow a different law, the Administrative Procedure Act (APA). That law spells out the process agencies must follow before they impose regulations.</p>
+<p>According to the lawsuit, the Treasury rule violated the APA because Treasury lacked authority to act, its rule was arbitrary and capricious, and it did not permit public notice and comment.</p>
+<p>Allergan and Pfizer are not parties to the lawsuit, but the lawsuits cites their failed merger as an example of the harm done by the rule.
+Representatives of the companies declined to comment on the litigation.</p>
+<p>Pfizer is a member of the chamber and the Texas Association of Business. Allergan is a member of the chamber and the Greater Waco Chamber of Commerce, which in turn is a member of the Texas group, the lawsuit said.</p>
+<p>The two drug companies ""would actively explore merger opportunities"" if the rule were set aside, the lawsuit said.
+DOZENS OF DEALS</p>
+<p>Dozens of U.S. companies have done inversions since 1983, when the first such deal was completed. Treasury has periodically moved to curb the flow of deals because inversions erode the U.S. corporate income tax base.</p>
+<p>Treasury unveiled a package of rules in April meant to further discourage the deals, which typically involve a U.S. multinational buying a smaller company in a foreign country with lower corporate taxes and then rebasing there, if only on paper.</p>
+<p>Inverting U.S. companies usually leave their core U.S. operations at home, transferring only their legal tax domicile to the home country of the acquired company. Recent popular destinations for the deals are Ireland, Britain and Canada.</p>
+<p>Fast food chain Burger King inverted to Canada last year; medical technology group Medtronic (N:MDT) to Ireland in 2014; drug maker Mylan Inc (O:MYL) to The Netherlands that same year.</p>
+<p>The lawsuit challenges a specific rule that imposed a three-year limit on foreign companies such as Allergan bulking up on U.S. assets to avoid ownership thresholds for a later inversion.</p>
+<p>In April, Treasury defended its regulation in a statement that said it was ""not consistent with the purposes"" of federal law to permit a foreign company to bulk up so quickly and then enter into another inversion.</p>
+<p>Texas federal courts have been a friendly venue for groups suing the Obama administration. A judge there blocked the president's proposed overhaul of immigration.</p>
+<p>More litigation is expected in the months ahead as Treasury moves to finalize another anti-inversions rule targeting ""earnings stripping,"" a tax-avoiding practice in which a foreign parent lends money to a U.S. unit, which sends U.S. profits back as partially U.S. tax-deductible interest.</p>
+<p>Republicans, and at times Obama, have pushed for a comprehensive tax code overhaul that would fully address inversions, but Washington for decades has lacked the political will to tackle such a complex project.</p>",
 
                   date: new DateTime(2016, 07, 27, 17, 53, 48),
                     authorUsername: "david@gmail.com"
@@ -163,6 +164,20 @@ Advancing issues outnumbered decliners on the NYSE by 1,783 to 1,073. On the Nas
 The S&P 500 index showed 16 new 52-week highs and one new low, while the Nasdaq recorded 66 new highs and 27 new lows.",
                     date: new DateTime(2016, 06, 30, 17, 36, 52),
                     authorUsername: "yasha@gmail.com"
+                );
+
+                CreatePost(context,
+                    title: "Here's How OPEC Manipulates The Oil Market",
+                    body: @" <p>Tuesday’s <span class=""aqPopupWrapper js-hover-me-wrapper""><a href=""/commodities/crude-oil"" id=""57bdc2e81516f"" class=""aqlink js-hover-me"" hoverme=""aql"" data-pairid=""8849"">oil</a></span> market has proven, once again, that OPEC can play the speculation game too.</p>
+<p>Last week, the price of oil was slowly climbing back up to $50 a barrel, apparently based on reports that OPEC leaders were planning to meet to discuss a production freeze at the end of September. At the start of this week, however, the media reported that most analysts do not believe that OPEC will agree to a production freeze (an obvious conclusion), that the number of <span class=""aqPopupWrapper js-hover-me-wrapper""><a href=""/economic-calendar/baker-hughes-u.s.-rig-count-1652"" id=""57bdc2e815517"" class=""js-hover-me"" hoverme=""eel"" data-eventid=""1652"">new oil rigs</a></span> in the U.S. <a href=""http://www.businessinsider.com/baker-hughes-rig-count-august-19-2016-8"" target=""_blank"" rel=""nofollow"">is increasing</a>, and that <a href=""http://www.reuters.com/article/us-iraq-oil-foreign-idUSKCN10Y0XI"" target=""_blank"" rel=""nofollow"">Iraq</a> is planning to increase oil exports. The price of oil began to decline.</p>
+<p>Then, suddenly, around midday on Tuesday, the price of oil shot up by almost $1.50. The culprit? A Reuter’s <span class=""aqPopupWrapper mediumTitle1 js-hover-me-wrapper""><a href=""/news/commodities-news/oil-prices-fall-as-analysts-say-market-still-oversupplied-421752"" id=""57bdc2e815884"" class=""js-hover-me"" hoverme=""oal"" data-articleid=""421752"">report</a></span> based on an unnamed OPEC source, that Iran might be interested in “joint action,” to support oil prices. Despite the fact that the Iranian Oil Ministry has not even confirmed that Iran will attend the September meeting in Algeria, speculators saw the headline and ran with it.</p>
+<p>Iran has no incentive to curtail its oil production. The country needs money desperately and has just overcome a major political hurdle on the way to offering new types of petroleum development contracts (called <a href=""http://www.shana.ir/en/newsagency/267470/IPC-in-no-Contrast-with-Resistive-Economy-Expert"" target=""_blank"" rel=""nofollow"">Iran Petroleum Contracts</a> or IPCs) to investors. Agreeing to freeze its oil production at current levels would send a message to investors that Iran is not open for petroleum development and would severely limit the country’s ability to increase its revenue in the future. Iran <a href=""http://www.shana.ir/en/newsagency/267470/IPC-in-no-Contrast-with-Resistive-Economy-Expert"" target=""_blank"" rel=""nofollow"">cannot</a> do that.</p>
+<p>What Iran and other OPEC countries can do, however, is play the speculation game. Given that all oil producing countries and companies (with exceptions for destitute countries like <a href=""http://www.forbes.com/sites/ellenrwald/2016/08/11/venezuela-is-drowning-in-its-own-oil/#7863bd87da9a"" target=""_blank"" rel=""nofollow"">Venezuela</a>) are producing at high rates, and given that global demand is not increasing at the same rates, the price of oil is stuck below a certain threshold and above another.</p>
+<p>Within this price range, however, certain producing countries (such as Iran, Saudi Arabia, Iraq, Russia) have found that they can easily manipulate oil traders with words. While past oil ministers, such as the recently retired Ali al-Naimi from Saudi Arabia, often <a href=""http://fingfx.thomsonreuters.com/gfx/ce/1/482/482/NAIMI%20AT%20CERA%20WEEK.pdf"" target=""_blank"" rel=""nofollow"">chastised</a> speculators for their finicky reactions to his every word, the current generation is taking advantage. It seems that OPEC ministers are now manipulating the manipulators. They issue cryptic statements that are not lies but are not substantive either. These statements serve to raise prices while the countries continue overproducing. All they have to do to raise the price by a couple of percentage points is issue a statement or two about a possible meeting or a hope to “stabilize the market.” They wait a day, or an hour, and speculators take the bait, pushing up the price of oil.</p>
+<p>This week has shown that the speculators have taken the bait yet again.</p>",
+
+                     date: new DateTime(2016, 08, 24, 19, 00, 00),
+                    authorUsername: "ellen@gmail.com"
                 );
 
                 context.SaveChanges();

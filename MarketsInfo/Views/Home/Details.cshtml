@@ -41,7 +41,7 @@
         <text>
             @Html.Raw( Model.Body)
 
-        <</text>
+        </text>
 
         <div>
             @Html.ActionLink("Add comment", "Create", "Comments")
@@ -50,23 +50,49 @@
         <div>
             @foreach (var news in Model.Comments)
             {
-                <div>
-                    <p>
-                        @Html.DisplayFor(model => news.Date)
-                    </p>
-                     <p>
-                        @Html.DisplayFor(model => news.Text)
-                    </p>
-                    <p>
-                        @Html.DisplayFor(model => news.AuthorId)
-                    </p>
-                </div>
-            }
-        </div>
+                <div id="wrap">
+                    <div id="header">
+                        <p>@Html.DisplayFor(model => news.Text)</p>
+                    </div>
+                    <div id="inner-wrap">
+                        <div id="avatar">Author: </div>
+                        <div id="name">
+                            @if (news.AuthorId == null)
+                            {
+                                @:Guest
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(model => news.AuthorId)
 
-    </dl>
-</div>
-<p>
+                            }
+
+                        </div>
+                        <div id="arrow"></div>
+                        <div id="main" style="position: relative">
+                            <div id="filler">@Html.DisplayFor(model => news.Date)</div>
+
+                            <div style="clear: both">
+                            </div>
+                            <div style="clear: both">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                if (User.IsInRole("Administrators") || (news.AuthorId != null && User.Identity.Name == news.AuthorId))
+                {
+                    <div id="action-edit">@Html.ActionLink("Edit", "Index", "Comments")</div>
+                }
+                if (User.IsInRole("Administrators"))
+                 {
+                     <div id="action-delete">@Html.ActionLink("Delete", "Index", "Comments")</div>
+                 }
+            }
+             </div>
+
+        </dl>
+        </div>
+        <p>
  
-    @Html.ActionLink("Back to List", "Index")
-</p>
+            @Html.ActionLink("Back to List", "Index")
+        </p>

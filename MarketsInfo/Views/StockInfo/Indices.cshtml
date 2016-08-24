@@ -1,0 +1,52 @@
+﻿
+@model List<MarketsInfo.Models.StockInfo>
+@{
+    ViewBag.Title = "Indices";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<script type="text/JavaScript">
+<!--
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(30000);
+
+//   -->
+</script>
+
+
+
+
+
+
+<table class="table">
+    <tr>
+        <th>SYMBOL</th>
+        <th>NAME</th>
+        <th>BID</th>
+        <th>ASK</th>
+        <th>OPEN</th>
+        <th>PREVIOUS CLOSE</th>
+        <th>Date</th>
+        <th>LAST</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Symbol)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Bid)</td>
+            <td>@Html.DisplayFor(modelItem => item.Ask)</td>
+            <td>@Html.DisplayFor(modelItem => item.Open)</td>
+            <td>@Html.DisplayFor(modelItem => item.PreviousClose)</td>
+            <td>@Html.DisplayFor(modelItem => item.StockDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Last)</td>
+
+        </tr>
+    }
+</table>
+<br />
+<br />

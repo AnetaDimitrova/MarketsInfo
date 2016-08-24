@@ -18,7 +18,7 @@ namespace MarketsInfo.Controllers
         // GET: Comments
         public ActionResult Index()
         {
-            var comments = db.Comments.Include(c => c.News);
+            var comments = db.Comments.Include(c => c.News).OrderByDescending(c => c.Date);
             return View(comments.ToList());
         }
 
@@ -42,7 +42,7 @@ namespace MarketsInfo.Controllers
 
         {
             
-           
+         
             ViewBag.NewsId = new SelectList(db.News, "Id", "Title");
            
             return View();
@@ -72,6 +72,7 @@ namespace MarketsInfo.Controllers
         }
 
         // GET: Comments/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -92,6 +93,7 @@ namespace MarketsInfo.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit([Bind(Include = "Id,Text,Date,AuthorId,NewsId")] Comment comment)
         {
             if (ModelState.IsValid)
@@ -105,6 +107,7 @@ namespace MarketsInfo.Controllers
         }
 
         // GET: Comments/Delete/5
+        [Authorize(Roles = "Administrators")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -120,6 +123,7 @@ namespace MarketsInfo.Controllers
         }
 
         // POST: Comments/Delete/5
+        [Authorize(Roles = "Administrators")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
