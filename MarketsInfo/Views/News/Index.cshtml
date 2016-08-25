@@ -38,7 +38,7 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Utiles.CutText(item.Body)
+                @Html.Raw(Utiles.CutText(item.Body))
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.date)

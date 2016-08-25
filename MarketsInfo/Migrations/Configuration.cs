@@ -98,15 +98,15 @@ DOZENS OF DEALS</p>
 
                 CreatePost(context,
                     title: "Crude jumps 2% extending rally from 3-month lows, amid short covering",
-                    body: @"Investing.com -- Crude futures rose sharply on Thursday, amid heavy short covering, as oil prices continued to rebound from a lengthy midsummer rout, one day after reports indicated that the massive supply glut in gasoline inventories could be showing signs of leveling.
-On the New York Mercantile Exchange, WTI crude for September delivery traded between $40.45 and $42.08 a barrel before closing at $41.84, up 1.01 or 2.47% on the session. Earlier this week, the front month contract for U.S. crude futures closed below $40 for the first time since mid-April, capping a lengthy five-week downturn after hitting 10-month highs at the start of the summer. On the Intercontinental Exchange (ICE), brent crude for October delivery wavered between $42.52 and $44.33 a barrel, before settling at $44.23, up 1.12 or 2.60% on the day.
-The international and U.S. domestic benchmarks for crude are still down more than 15% from their June highs.
-In Thursday's session, market players continued to digest a surprising draw in gasoline inventories last week when stockpiles nationwide fell by 3.3 million barrels for the week ending on July 29. It came amid mounting fears among analysts of a massive supply glut in recent weeks, as refineries churn out product at a rapid pace due to comparatively low oil prices. In spite of the massive decline, total petroleum inventories have still spiked by approximately 25 million barrels over the last two months, according to analysts.
-Investors turn their attention to Friday's weekly rig count from Baker Hughes for clearer indications on the rate of drilling activity throughout the U.S. Last week, Baker Hughes reported that the U.S. oil rig count rose by three to 374 for the week ending on July 22, representing the fifth consecutive week of weekly gains.
-High cost U.S. shale producers have seen their global market share wane, as prices remain sharply below their peak of $115 a barrel from two summers ago. In November, 2014, OPEC rattled global energy markets by maintaining their production ceiling above 30 million barrels per day in an effort to regain market share. The strategy triggered a prolonged battle between leading producers in the Middle East and the U.S. for control of oil markets worldwide, creating an imbalance between global supply and demand.
-Analysts from the Institute of International Finance (IIF) estimated this week that OPEC could control as much as 46% of global supply by 2020, nearly matching its peak from forty years ago. At the same time, the IIF predicts that global oil demand will increase by 1.4 million bpd in 2016, before rising by another 1.3 million bpd by the end of next year. As a steady increase in demand is met by only a moderate increase in global supply, the IIF estimates that oil prices will remain in a range between $40 and $50 a barrel through the end of 2017.
-The U.S. Dollar Index, which measures the strength of the greenback versus a basket of six other major currencies, gained more than 0.20% to an intraday high 95.87. The index is still sharply below four-month highs of 97.62 from early last week.
-Dollar-denominated commodities such as Crude become more expensive for foreign purchasers when the dollar appreciates.
+                    body: @"<p>Investing.com -- Crude futures rose sharply on Thursday, amid heavy short covering, as oil prices continued to rebound from a lengthy midsummer rout, one day after reports indicated that the massive supply glut in gasoline inventories could be showing signs of leveling.</p>
+<p>On the New York Mercantile Exchange, WTI crude for September delivery traded between $40.45 and $42.08 a barrel before closing at $41.84, up 1.01 or 2.47% on the session. Earlier this week, the front month contract for U.S. crude futures closed below $40 for the first time since mid-April, capping a lengthy five-week downturn after hitting 10-month highs at the start of the summer. On the Intercontinental Exchange (ICE), brent crude for October delivery wavered between $42.52 and $44.33 a barrel, before settling at $44.23, up 1.12 or 2.60% on the day.</p>
+<p.The international and U.S. domestic benchmarks for crude are still down more than 15% from their June highs.</p>
+<p>In Thursday's session, market players continued to digest a surprising draw in gasoline inventories last week when stockpiles nationwide fell by 3.3 million barrels for the week ending on July 29. It came amid mounting fears among analysts of a massive supply glut in recent weeks, as refineries churn out product at a rapid pace due to comparatively low oil prices. In spite of the massive decline, total petroleum inventories have still spiked by approximately 25 million barrels over the last two months, according to analysts.</p>
+<p>Investors turn their attention to Friday's weekly rig count from Baker Hughes for clearer indications on the rate of drilling activity throughout the U.S. Last week, Baker Hughes reported that the U.S. oil rig count rose by three to 374 for the week ending on July 22, representing the fifth consecutive week of weekly gains.</p>
+<p>High cost U.S. shale producers have seen their global market share wane, as prices remain sharply below their peak of $115 a barrel from two summers ago. In November, 2014, OPEC rattled global energy markets by maintaining their production ceiling above 30 million barrels per day in an effort to regain market share. The strategy triggered a prolonged battle between leading producers in the Middle East and the U.S. for control of oil markets worldwide, creating an imbalance between global supply and demand.</p>
+<p>Analysts from the Institute of International Finance (IIF) estimated this week that OPEC could control as much as 46% of global supply by 2020, nearly matching its peak from forty years ago. At the same time, the IIF predicts that global oil demand will increase by 1.4 million bpd in 2016, before rising by another 1.3 million bpd by the end of next year. As a steady increase in demand is met by only a moderate increase in global supply, the IIF estimates that oil prices will remain in a range between $40 and $50 a barrel through the end of 2017.
+The U.S. Dollar Index, which measures the strength of the greenback versus a basket of six other major currencies, gained more than 0.20% to an intraday high 95.87. The index is still sharply below four-month highs of 97.62 from early last week.</p>
+<p>Dollar-denominated commodities such as Crude become more expensive for foreign purchasers when the dollar appreciates.</p>
 ",
                     date: new DateTime(2016, 02, 18, 22, 14, 38),
                     authorUsername: "merry@gmail.com"
@@ -114,54 +114,54 @@ Dollar-denominated commodities such as Crude become more expensive for foreign p
 
                 CreatePost(context,
                     title: "Airbus closes on rival Boeing in jet order race",
-                    body: @"PARIS/NEW YORK (Reuters) - Airbus (PA:AIR) virtually closed the gap with Boeing in their intense battle for airliner orders in July after booking about half of the 197 firm sales unveiled at last month's Farnborough Airshow, according to the latest data from both companies.
-Amid a broad slowdown in purchases, the European planemaker said it had sold a total of 373 jets between January and July, or 323 after adjusting for cancellations.
-That compares with 383 airplane sales, or 333 after cancellations, notched up by U.S. rival Boeing (N:BA).
-Combined orders at the world's dominant planemakers fell 17 percent from the same period last year, weighed by concerns over the economy and relatively low oil prices which have taken the edge off demand for new fuel-saving models.
-Both planemakers are also struggling to book new sales in a market that is seen as somewhat oversupplied with jets, especially larger wide-body models, industry experts said.
-The slowdown has raised some questions about whether they will maintain plans to boost output later this decade.
+                    body: @"<p>PARIS/NEW YORK (Reuters) - Airbus (PA:AIR) virtually closed the gap with Boeing in their intense battle for airliner orders in July after booking about half of the 197 firm sales unveiled at last month's Farnborough Airshow, according to the latest data from both companies.</p>
+<p>Amid a broad slowdown in purchases, the European planemaker said it had sold a total of 373 jets between January and July, or 323 after adjusting for cancellations.</p>
+<p>That compares with 383 airplane sales, or 333 after cancellations, notched up by U.S. rival Boeing (N:BA).
+Combined orders at the world's dominant planemakers fell 17 percent from the same period last year, weighed by concerns over the economy and relatively low oil prices which have taken the edge off demand for new fuel-saving models.</p>
+<p>Both planemakers are also struggling to book new sales in a market that is seen as somewhat oversupplied with jets, especially larger wide-body models, industry experts said.</p>
+<p>The slowdown has raised some questions about whether they will maintain plans to boost output later this decade.
 Both have also faced a slew of order deferrals in recent weeks, while insisting the trend of postponements is stable.
-Two industry sources said Indonesia's Lion Air, one of the largest Asian jet buyers with hundreds of jets on order from Boeing and Airbus, is aiming to defer about 25 Airbus jets.
-Airbus declined comment and Lion Air was not available.
-The planemaker was also hammering out last details of an order for 100 more planes from Lion Air's regional rival AirAsia (KL:AIRA), announced in a shower of publicity at Farnborough.
-After a slow start to the year, Airbus had looked set to end the Farnborough Airshow with 380 net orders for the year to date including the AirAsia deal, which it described as a firm order.
-The deal did not make it into the new tally, however, and an Airbus spokesman said paperwork was being finalised. A person close to the talks said they only involved tying up loose ends.
-Latest Airbus data also suggested that another order secured at the height of an industry boom in 2012 had been trimmed back.
-Mexican low-cost carrier Interjet has canceled five of 40 A320neo jets it has on order, according to Thursday's update.
-No immediate comment was available from the airline on the disclosure, which comes as Mexican consumer confidence drops to its lowest level in two years amid a weak economy.
-DELIVERY
-While Boeing remains ahead by a whisker in the race for new orders, it maintains a solid lead on deliveries which drive revenues, handing over 432 jets between January and July.
-Airbus delivered 339 jets between January and July, down 4 percent on the year, due in part to a shortage of Pratt & Whitney (UTX.N> engines for its latest model, the revamped A320neo.
-Airbus delivered just three of the jets in July, including two powered by Pratt & Whitney and the first to be delivered with alternative engines from CFM International (N:GE) (PA:SAF).
-So far this year it has delivered 11 A320neos and 15 of its widebody A350s, another model suffering delays due in part to problems with suppliers. It aims to deliver 50 A350s this year.
-Industry sources say that besides widely reported problems with cabin equipment such as toilets, the A350 has faced some other glitches including quality problems with wing spoilers from Austrian parts maker FACC (VI:FACC). An Airbus spokesman said these problems had been resolved. FACC declined to comment.
-New Airbus data also incorporated the cancellation by Qatar Airways of the first of 50 A320neo-family jets it has ordered.
-The Gulf airline has criticized Airbus and Pratt & Whitney over A320neo delays and said in June it would exercise a clause to abandon the first jet, one of several parked in Qatar livery outside the French factory waiting for engines.
-Parent Airbus Group said last week that upgraded versions of the engines were now being delivered.
-Meanwhile, Qatar Airways is in talks with Boeing for rival 737 MAX jets to diversify its fast-expanding fleet.",
+Two industry sources said Indonesia's Lion Air, one of the largest Asian jet buyers with hundreds of jets on order from Boeing and Airbus, is aiming to defer about 25 Airbus jets.</p>
+<p>Airbus declined comment and Lion Air was not available.</p>
+<p>The planemaker was also hammering out last details of an order for 100 more planes from Lion Air's regional rival AirAsia (KL:AIRA), announced in a shower of publicity at Farnborough.</p>
+<p>After a slow start to the year, Airbus had looked set to end the Farnborough Airshow with 380 net orders for the year to date including the AirAsia deal, which it described as a firm order.</p>
+<p>The deal did not make it into the new tally, however, and an Airbus spokesman said paperwork was being finalised. A person close to the talks said they only involved tying up loose ends.</p>
+<p>Latest Airbus data also suggested that another order secured at the height of an industry boom in 2012 had been trimmed back.
+Mexican low-cost carrier Interjet has canceled five of 40 A320neo jets it has on order, according to Thursday's update.</p>
+<p>No immediate comment was available from the airline on the disclosure, which comes as Mexican consumer confidence drops to its lowest level in two years amid a weak economy.</p>
+<p>DELIVERY</p>
+<p>While Boeing remains ahead by a whisker in the race for new orders, it maintains a solid lead on deliveries which drive revenues, handing over 432 jets between January and July.</p>
+<p>Airbus delivered 339 jets between January and July, down 4 percent on the year, due in part to a shortage of Pratt & Whitney (UTX.N> engines for its latest model, the revamped A320neo.</p>
+<p>Airbus delivered just three of the jets in July, including two powered by Pratt & Whitney and the first to be delivered with alternative engines from CFM International (N:GE) (PA:SAF).</p>
+<p>So far this year it has delivered 11 A320neos and 15 of its widebody A350s, another model suffering delays due in part to problems with suppliers. It aims to deliver 50 A350s this year.<p>
+<p>Industry sources say that besides widely reported problems with cabin equipment such as toilets, the A350 has faced some other glitches including quality problems with wing spoilers from Austrian parts maker FACC (VI:FACC). An Airbus spokesman said these problems had been resolved. FACC declined to comment.</p>
+<p>New Airbus data also incorporated the cancellation by Qatar Airways of the first of 50 A320neo-family jets it has ordered.
+The Gulf airline has criticized Airbus and Pratt & Whitney over A320neo delays and said in June it would exercise a clause to abandon the first jet, one of several parked in Qatar livery outside the French factory waiting for engines.</p>
+<p>Parent Airbus Group said last week that upgraded versions of the engines were now being delivered.
+Meanwhile, Qatar Airways is in talks with Boeing for rival 737 MAX jets to diversify its fast-expanding fleet.</p>",
                     date: new DateTime(2016, 04, 11, 19, 02, 05),
                     authorUsername: "aneta@gmail.com"
                 );
 
                 CreatePost(context,
                     title: "Wall Street flat as investors hold off ahead of jobs data",
-                    body: @"(Reuters) - Wall Street was little changed on Thursday as investors were wary of making big bets ahead of Friday's payrolls report.
-The crucial monthly hiring data will help investors gauge the health of the economy and offer clues about when the Federal Reserve could pull the trigger on rates.
-""Today is more of a consolidation of positions. Perhaps taking some chips off the table ahead of tomorrow's jobs number,"" said Tony Bedikian, head of global markets at Citizens Bank.
-""The Fed would perhaps need one more strong payroll number before it makes a move.""
-Traders have priced in a 12 percent chance of a rate hike in September and a 35 percent chance in December, according to CME Group's FedWatch tool.
-At 12:32 p.m. ET (1632 GMT), the Dow Jones Industrial Average (DJI) was up 1.95 points, or 0.01 percent, at 18,356.95.
+                    body: @"<p>(Reuters) - Wall Street was little changed on Thursday as investors were wary of making big bets ahead of Friday's payrolls report.</p>
+<p>The crucial monthly hiring data will help investors gauge the health of the economy and offer clues about when the Federal Reserve could pull the trigger on rates.</p>
+<p>""Today is more of a consolidation of positions. Perhaps taking some chips off the table ahead of tomorrow's jobs number,"" said Tony Bedikian, head of global markets at Citizens Bank.</p>
+<p>""The Fed would perhaps need one more strong payroll number before it makes a move.""</p>
+<p>Traders have priced in a 12 percent chance of a rate hike in September and a 35 percent chance in December, according to CME Group's FedWatch tool.</p>
+<p>At 12:32 p.m. ET (1632 GMT), the Dow Jones Industrial Average (DJI) was up 1.95 points, or 0.01 percent, at 18,356.95.
 The S&P 500 index (SPX) was up 2.09 points, or 0.1 percent, at 2,165.88.
-The Nasdaq Composite (IXIC) was up 9.20 points, or 0.18 percent, at 5,168.94.
-The Bank of England lowered its key lending rate to 0.25 percent from 0.5 and said it would take ""whatever action is necessary"" to achieve stability in the wake of Britain's vote to leave the European Union.
-Seven of the 10 major S&P 500 sectors were higher, led by a 0.52 percent gain in the information technology index (SPLRCT).
+The Nasdaq Composite (IXIC) was up 9.20 points, or 0.18 percent, at 5,168.94.</p>
+<p>The Bank of England lowered its key lending rate to 0.25 percent from 0.5 and said it would take ""whatever action is necessary"" to achieve stability in the wake of Britain's vote to leave the European Union.</p>
+<p>Seven of the 10 major S&P 500 sectors were higher, led by a 0.52 percent gain in the information technology index (SPLRCT).
 A rebound in oil prices helped reverse losses in the energy sector (SPNY), which rose 0.21 percent. [O/R]
 Facebook's (O:FB) stock rose 1.6 percent to $124.50 and was the biggest driver of the S&P and the Nasdaq.
 Metlife (N:MET) dropped nearly 10 percent after the largest U.S. life insurer's quarterly profit missed estimates.
 Ball Corp (N:BLL) jumped 8.5 percent after its quarterly sales rose and was the top percentage gainer on the S&P 500.
 LinkedIn (N:LNKD) which has agreed to be bought by Microsoft (O:MSFT), and Kraft Heinz (O:KHC) are scheduled to report after the bell.
 Advancing issues outnumbered decliners on the NYSE by 1,783 to 1,073. On the Nasdaq, 1,508 issues rose and 1,185 fell.
-The S&P 500 index showed 16 new 52-week highs and one new low, while the Nasdaq recorded 66 new highs and 27 new lows.",
+The S&P 500 index showed 16 new 52-week highs and one new low, while the Nasdaq recorded 66 new highs and 27 new lows.</p>",
                     date: new DateTime(2016, 06, 30, 17, 36, 52),
                     authorUsername: "yasha@gmail.com"
                 );

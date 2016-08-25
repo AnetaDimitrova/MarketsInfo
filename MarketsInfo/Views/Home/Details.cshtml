@@ -19,11 +19,11 @@
        </div>
 
 
-        <div>
+        <div class="news-date">
             Posted on
             <i>  @Html.DisplayFor(model => model.date)</i>
         </div>
-        <div>
+        <div class="news-author">
             
             @if (Model.Author != null)
             {
@@ -46,7 +46,7 @@
         <div>
             @Html.ActionLink("Add comment", "Create", "Comments")
         </div>
-
+        
         <div>
             @foreach (var news in Model.Comments)
             {
@@ -55,8 +55,8 @@
                         <p>@Html.DisplayFor(model => news.Text)</p>
                     </div>
                     <div id="inner-wrap">
-                        <div id="avatar">Author: </div>
-                        <div id="name">
+                        <div id="avatar">Author:
+                      
                             @if (news.AuthorId == null)
                             {
                                 @:Guest

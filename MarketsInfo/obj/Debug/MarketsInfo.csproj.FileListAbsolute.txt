@@ -79,4 +79,3 @@ C:\Users\PC\documents\visual studio 2015\Projects\MarketsInfo\MarketsInfo\bin\Mi
 C:\Users\PC\documents\visual studio 2015\Projects\MarketsInfo\MarketsInfo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\PC\documents\visual studio 2015\Projects\MarketsInfo\MarketsInfo\obj\Debug\MarketsInfo.dll
 C:\Users\PC\documents\visual studio 2015\Projects\MarketsInfo\MarketsInfo\obj\Debug\MarketsInfo.pdb
-C:\Users\PC\documents\visual studio 2015\Projects\MarketsInfo\MarketsInfo\obj\Debug\MarketsInfo.csprojResolveAssemblyReference.cache

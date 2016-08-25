@@ -282,7 +282,6 @@
     <Content Include="Views\News\Details.cshtml" />
     <Content Include="Views\News\Edit.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
-    <Content Include="Views\Home\test.cshtml" />
     <Content Include="Views\Comments\Create.cshtml" />
     <Content Include="Views\Comments\Delete.cshtml" />
     <Content Include="Views\Comments\Details.cshtml" />
@@ -292,7 +291,6 @@
     <Content Include="Views\StockInfo\Indices.cshtml" />
     <Content Include="Views\StockInfo\Forex.cshtml" />
     <Content Include="Views\StockInfo\StockQuotes.cshtml" />
-    <Content Include="Views\Home\Markets.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

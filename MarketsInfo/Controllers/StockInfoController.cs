@@ -25,7 +25,7 @@ namespace MarketsInfo.Controllers
             {
                 csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");
                 List<StockInfo> stocks = YahooFinance.Parse(csvData);
-
+                
                 return View(stocks);
 
 

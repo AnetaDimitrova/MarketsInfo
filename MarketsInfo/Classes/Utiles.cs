@@ -7,7 +7,7 @@ namespace MarketsInfo.Classes
 {
     public class Utiles
     {
-        public static string CutText(string text, int maxLength = 300)
+        public static string CutText(string text, int maxLength = 500)
         {
             if (text == null || text.Length <= maxLength)
             {

@@ -19,39 +19,22 @@ namespace MarketsInfo.Controllers
         {
             var news = db.News.Include(p => p.Author)
                 .Include(n => n.Comments).OrderByDescending(n => n.date).Take(5).ToList();
+
+            
+        
+
+           
             return View(news.ToList());
         }
 
 
 
 
-        public ActionResult Markets()
-        {
-
-
-            string csvData;
-            string symbols = "EURUSD=X, AAPL, GOOG, MSFT, ^DJI, ^IXIC, CL=F";
-            using (WebClient web = new WebClient())
-            {
-                csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");
-                List<StockInfo> stocks = YahooFinance.Parse(csvData);
-
-                return View(stocks);
-
-
-            }
-        }
-
+       
 
        
 
 
-        public ActionResult test()
-        {
-            return View();
-        }
-
-       
         public ActionResult Details(int? id)
         {
             if (id == null)

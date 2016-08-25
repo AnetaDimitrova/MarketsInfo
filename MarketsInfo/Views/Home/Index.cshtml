@@ -11,7 +11,9 @@
 
 
     <img src="~/Content/tfi-top-am-financial-markets.jpg" />
-    
+
+
+
 
 <div class="container">
     
@@ -24,25 +26,34 @@
             <p>At MarketsInfo, you get  stock quotes, financial, business and economic news .</p>
         </div>
     </div>
-    <!-- /.row -->
-    <!-- Feature Row -->
+    
     @foreach (News news in Model)
     {
-        <div class="row">
-            <article class="col-md-6 article-intro">
+        <div class="row page-intro">
+          
+                <article class="col-md-12 article-intro">
 
-                <h3>
-                    @Html.ActionLink(@news.Title, "Details", new {id = news.Id})
-                </h3>
-                <p>@Utiles.CutText(news.Body)</p>
-            </article>
-
+                    <h3>
+                        @Html.ActionLink(@news.Title, "Details", new {id = news.Id})
+                    </h3>
+                    <p class="news-date"><i>Posted on @news.date</i></p>
+                    <p class="news-author">
+                        
+                        @if (news.Author != null)
+                              {
+                                  @:by <i>
+                                  @news.Author.FullName
+                                  @:( @news.Author.UserName )</i>
+                              }
+                    </p>
+                    <p>@Html.Raw(Utiles.CutText(news.Body))</p>
+                </article>
+            
         </div>
 
     }
 
 </div>
-        
 
 
 

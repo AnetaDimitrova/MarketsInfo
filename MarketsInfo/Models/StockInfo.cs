@@ -10,7 +10,7 @@ namespace MarketsInfo.Models
 {
  
     public class StockInfo
-    {
+    { 
         [Key]
         public string Symbol { get; set; }
         public string Name { get; set; }
@@ -19,6 +19,7 @@ namespace MarketsInfo.Models
         public decimal Open { get; set; }
         public decimal PreviousClose { get; set; }
         public decimal Last { get; set; }
+       
         public DateTime StockDate { get; set; }
     }
 
