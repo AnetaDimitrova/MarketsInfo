@@ -20,7 +20,7 @@ namespace MarketsInfo.Controllers
 
 
             string csvData;
-            string symbols = "ZG=F, CL=F";
+            string symbols = "ZG=F,ZI=F, CL=F, HO=F, NG=F, CC=F, KC=F, CT=F, SB=F";
             using (WebClient web = new WebClient())
             {
                 csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");
@@ -37,7 +37,7 @@ namespace MarketsInfo.Controllers
 
 
             string csvData;
-            string symbols = "^DJI, ^GSPC, ^IXIC,^BATSK, ^GDAXI, ^N225, ^HSI, ^FCHI, ^NZ50, ^KLSE";
+            string symbols = "^GSPC, ^IXIC,^BATSK, ^GDAXI, ^N225, ^HSI, ^FCHI, ^NZ50, ^KLSE";
             using (WebClient web = new WebClient())
             {
                 csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");
@@ -68,7 +68,7 @@ namespace MarketsInfo.Controllers
 
 
             string csvData;
-            string symbols = "AAPL, GOOG, MSFT";
+            string symbols = "BAC, SIRI, MRO, F, MOS, AAPL, GOOG, MSFT";
             using (WebClient web = new WebClient())
             {
                 csvData = web.DownloadString("http://finance.yahoo.com/d/quotes.csv?s=" + symbols + "&f=snbaopl1");

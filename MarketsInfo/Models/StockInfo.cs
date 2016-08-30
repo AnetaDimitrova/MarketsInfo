@@ -14,12 +14,18 @@ namespace MarketsInfo.Models
         [Key]
         public string Symbol { get; set; }
         public string Name { get; set; }
+        [DisplayFormat(DataFormatString = "{0:0.####}")]
         public decimal Bid { get; set; }
+        [DisplayFormat(DataFormatString = "{0:0.####}")]
         public decimal Ask { get; set; }
+        [DisplayFormat(DataFormatString = "{0:0.####}")]
         public decimal Open { get; set; }
+        [DisplayFormat(DataFormatString = "{0:0.####}")]
         public decimal PreviousClose { get; set; }
+        [DisplayFormat(DataFormatString = "{0:0.####}")]
         public decimal Last { get; set; }
-       
+      
+
         public DateTime StockDate { get; set; }
     }
 
@@ -39,6 +45,7 @@ namespace MarketsInfo.Models
                     StockInfo s = new StockInfo();
                     s.Symbol = cols[0];
                     s.Name = cols[1];
+
                     s.Bid = Convert.ToDecimal(cols[2] == "N/A" ? "0" : cols[2]);
                     s.Ask = Convert.ToDecimal(cols[3] == "N/A" ? "0" : cols[3]);
                     s.Open = Convert.ToDecimal(cols[4] == "N/A" ? "0" : cols[4]);

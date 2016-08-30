@@ -17,4 +17,4 @@ namespace MarketsInfo.Classes
             return shortText;
         }
     }
-}
+} 
